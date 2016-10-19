@@ -1,9 +1,17 @@
+/** program #4:search of partial quotient
+ *
+ *
+ *  by Cherepanov Alexei (PI-171)
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-	int a, b, partial_quotient = 0;
+	int a, //делимое
+	int b; //делитель
+	int partial_quotient = 0; //неполное частное
 	scanf("%d %d", &a, &b);
 	while (a>=b)
 	{
