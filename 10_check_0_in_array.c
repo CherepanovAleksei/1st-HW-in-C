@@ -9,19 +9,19 @@
 
 int main()
 {
-    int i;   //счётчик
-	int num; //размер массива
-	int kol=0; //количество нулевых элементов
-    scanf("%d",&num);
     int mas[1000];
+    int i;   //счётчик
+    int num; //размер массива
+    int kol=0; //количество нулевых элементов
+    scanf("%d",&num);
     for (i = 0; i < num; i++)
-	{
+    {
         printf("[%d]: ", i + 1);   //ввод
         scanf("%d",&mas[i]); 	   //
         if(mas[i] == 0)        //проверка
-		{
-			kol++;
-		}
+	{
+		kol++;
+	}
     }
 printf("%d\n",kol);
 system("pause");
