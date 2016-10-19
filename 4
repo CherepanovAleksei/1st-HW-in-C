@@ -3,14 +3,14 @@
 
 int main()
 {
-	int a, b, k = 0;
+	int a, b, partial_quotient = 0;
 	scanf("%d %d", &a, &b);
 	while (a>=b)
 	{
 		a -= b;
-		k++;
+		partial_quotient++;
 	}
-	printf("%d\n",k);
+	printf("%d\n",partial_quotient);
 	system("pause");
 	return 0;
 }
