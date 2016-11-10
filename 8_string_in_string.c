@@ -1,3 +1,8 @@
+/** program #8:string_in_string
+ *
+ *
+ *  by Cherepanov Alexei (PI-171)
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,35 +11,37 @@ int main()
 {
     char s[1000];
     char s1[1000];
-    scanf("%s",s);
-    scanf("%s",s1);
-int ii,i,j;
-int k=0;
-int flag=0;
-//printf("%i\n",strlen(s1));
-for(i=0;i<strlen(s);i++)
-{
-    ii = i;
-    for(j=0;j<strlen(s1);j++)
-    {
-        if(s[ii] == s1[j])
-        {
-            ii++;
+    scanf("%s",s); //считываем строку
+    scanf("%s",s1);//и подстроку
+    
+    int i;  //счетчик для строки
+    int ii; //для копирования счетчика строки
+    int j;  //счетчик для подстроки
+    int kol=0;//считаем вхождения
+    int flag=0; //есть или нет вхождение
 
-        }
-        else
-        {
-            flag = -1;
-        }
-    }
-    if(flag>=0)
+    for(i=0;i<strlen(s);i++)  //проходим по строке
     {
-        k++;
+        ii = i; //копируем позтию эл-та для сравнения
+        for(j=0;j<strlen(s1);j++) //проходимся по подстроке
+        {
+            if(s[ii] == s1[j]) //сравниваем поэлементно 2 строки
+            {
+                ii++; //если символы совпадают, то продвигаем счетчик для 1й строки
+            }
+            else
+            {
+                flag = -1; //иначе помечаем, что здесь совпадения нет
+            }
+        }
+        if(flag>=0) //проверяем флаг
+        {
+            kol++; //счетчик вхождений
+        }
+        flag=0; //зануляем
     }
-    flag=0;
-}
 
-printf("%i",k);
+    printf("%i",kol); //выводим
 
     return 0;
 }
