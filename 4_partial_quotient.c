@@ -9,7 +9,7 @@
 
 int main()
 {
-	int a, //делимое
+	int a; //делимое
 	int b; //делитель
 	int partial_quotient = 0; //неполное частное
 	scanf("%d %d", &a, &b);
