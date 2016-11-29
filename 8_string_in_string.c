@@ -42,6 +42,5 @@ int main()
     }
 
     printf("%i",kol); //выводим
-    system("pause");
     return 0;
 }

@@ -24,6 +24,5 @@ int main()
 	}
     }
 printf("%d\n",kol);
-system("pause");
     return 0;
 }

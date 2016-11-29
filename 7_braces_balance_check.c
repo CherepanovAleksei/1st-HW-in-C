@@ -42,6 +42,5 @@ int main()
 	}
 	label:
 	printf("\n");
-	system("pause");
 	return 0;
 }

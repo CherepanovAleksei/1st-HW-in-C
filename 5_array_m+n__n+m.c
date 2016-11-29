@@ -33,6 +33,5 @@ int main()
         printf("%d ", array[i]); //выводим
     }
 	printf("\n");
-	system("pause");
 	return 0;
 }

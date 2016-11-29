@@ -16,6 +16,5 @@ int main()
     b+=a;
     a=b-a;
     printf("%d %d\n",a,b);
-    system("pause");
     return 0;
 }

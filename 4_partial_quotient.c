@@ -19,6 +19,5 @@ int main()
 		partial_quotient++;
 	}
 	printf("%d\n",partial_quotient);
-	system("pause");
 	return 0;
 }
